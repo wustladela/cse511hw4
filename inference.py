@@ -71,7 +71,8 @@ class InferenceModule:
   
   def initializeUniformly(self, gameState):
     "Sets the belief state to a uniform prior belief over all positions."
-    pass
+    self.initialize(self, gameState)
+    #pass
   
   def observe(self, observation, gameState):
     "Updates beliefs based on the given distance observation and gameState."
